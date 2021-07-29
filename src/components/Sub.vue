@@ -28,7 +28,7 @@
         this.sub()
       },
       subNHand() {
-        this.subN(5)
+        this.subN(2)
       },
 
       getBtnNAsync() {
