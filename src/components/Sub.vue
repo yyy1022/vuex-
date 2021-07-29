@@ -4,7 +4,7 @@
         <button @click="subHand">-1</button>
         <button @click="subNHand">-N</button>
         <button @click="subAsync">异步-1</button>
-        <button @click="getBtnNAsync">异步-N</button>
+        <button @click="subNAsync(2)">异步-N</button>
     </div>
 
 </template>
@@ -31,9 +31,9 @@
         this.subN(2)
       },
 
-      getBtnNAsync() {
-        this.subNAsync(6)
-      }
+      // getBtnNAsync() {
+      //   this.subNAsync(6)
+      // }
     }
   }
 </script>

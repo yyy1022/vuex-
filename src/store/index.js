@@ -48,10 +48,10 @@ export default new Vuex.Store({
         content.commit('sub')
       }, 100)
     },
-    subNAsync(content) {
+    subNAsync(content,step) {
       setTimeout(() => {
         // 在actions不能直接修改stste中的值，需要修改mutations
-        content.commit('subN')
+        content.commit('subN',step)
       }, 100)
     }
   },
