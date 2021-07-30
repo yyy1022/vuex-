@@ -55,6 +55,14 @@ export default new Vuex.Store({
       }, 100)
     }
   },
-  modules: {}
+  modules: {},
+  //会起起到计算属性的作用
+  getters:{
+    showNumber(state){
+      return '当前最新的数量是：['+state.count+']'
+
+    }
+
+  }
 })
 // mutation 用于修改store中的值，不可以直接操作store中的值

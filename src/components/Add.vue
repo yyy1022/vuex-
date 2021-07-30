@@ -1,6 +1,7 @@
 <template>
     <div>
-        <h3>当前最新count值为：{{$store.state.count}}</h3>
+<!--        <h3>当前最新count值为：{{$store.state.count}}</h3>-->
+        <h3>{{$store.getters.showNumber}}</h3>
         <button @click="getBtn">+1</button>
         <button @click="getBtnN">+N</button>
         <button @click="getBtnAsync">异步加+1</button>
