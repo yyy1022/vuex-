@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="app">
 <!--        <h3>当前最新count值为：{{$store.state.count}}</h3>-->
         <h3>{{$store.getters.showNumber}}</h3>
         <button @click="getBtn">+1</button>

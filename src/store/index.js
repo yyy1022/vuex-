@@ -5,27 +5,26 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
-    count: 0,
+    count:localStorage.getItem('count'),
     sum: 2
   },
   mutations: {
     // 不能写异步操作
     add(state) {
       state.count++
-
-      // setTimeout(()=>{
-      //   state.count++
-      //
-      // },1000)
+      localStorage.setItem('count',state.count)
     },
     addN(state, step) {
       state.count += step
+      localStorage.setItem('count',state.count)
     },
     sub(state) {
       state.count--
+      localStorage.setItem('count',state.count)
     },
     subN(state, step) {
       state.count -= step
+      localStorage.setItem('count',state.count)
     }
   },
   actions: {
